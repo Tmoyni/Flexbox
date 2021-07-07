@@ -1,10 +1,29 @@
+@import url(https://cdn.brandfolder.io/6124JDFB/at/qbtqbm-3lmpjk-40dwwk/WunderBrick-Display.otf);
+@import url(https://cdn.brandfolder.io/6124JDFB/at/qbtqbm-3lmpjk-ug2ox/WunderBrick-Text.otf);
+
 body {
-    display: flex;
     padding: 20px;
     height: 100vh;
     width: 100vw;
     font-family: 'Roboto', sans-serif;
     background-color: #191919;
+}
+
+.title {
+    width: 100vw;
+    height: 50px;
+    text-align: center;
+    font-size: 50px;
+    font-family: WunderBrickDisplay,Times New Roman,Times,serif;
+    font-weight: 400;
+    color: #25b89d;
+    padding: 0 0 20px;    
+}
+
+.content {
+    display: flex;
+    width: 100vw;
+    height: calc(100vh - 50px)
 }
 
 button {
@@ -16,7 +35,7 @@ button {
 }
 
 .selected {
-    background-color: rgb(38, 184, 157);    
+    background-color: #25b89d;    
 }
 
 .buttons-container {
@@ -27,12 +46,14 @@ button {
 
 .section {
     padding: 10px 0; 
-    border-bottom: 1px solid darkgray;
+    border-bottom: 1px solid #545252;
 }
 
 .section-header {
-    font-weight: bold;
-    color: white;
+    color: #f5ebe1;
+    font-family: WunderBrickText,Times New Roman,Times,serif;
+    font-size: 18px;
+    font-weight: 400;
 }
 .view-css {
     width: calc(70% - 60px);
@@ -44,11 +65,6 @@ button {
     width: 100%;
     height: 70%;
     background-color: #f5ebe1;
-    /* border: 2px solid lightslategrey; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .css-container {
@@ -57,19 +73,19 @@ button {
 }
 
 .item {
+    font-family: WunderBrickDisplay,Times New Roman,Times,serif;
+    font-size: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px 15px;
-    background-color: rgb(38, 184, 157);    
+    background-color: #25b89d;    
     margin: 3px;
     color: white;
     font-weight: bold;
     text-align: center;
     z-index: 10;
 }
-
-
 
 .explainer {
     color: black;
