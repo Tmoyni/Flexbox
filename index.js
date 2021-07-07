@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    console.log("working")
     let cssTextValue = $(".css-text")[0].innerText
 
     $(":button").on( "click", function() {
