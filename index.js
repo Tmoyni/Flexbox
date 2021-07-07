@@ -1,8 +1,8 @@
 $(document).ready(function() {
-    console.log("working")
-    let cssTextValue = $(".css-text")[0].innerText
-
     $(":button").on( "click", function() {
+        $(this).parent().children("button").removeClass("selected")
+        $(this).addClass("selected")
+
         //identify property & value and update CSS
         let property = $(this).parent()[0].id;
         let value = $(this)[0].outerText;

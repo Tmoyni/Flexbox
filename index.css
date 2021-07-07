@@ -15,6 +15,10 @@ button {
     cursor: pointer;
 }
 
+.selected {
+    background-color: rgb(38, 184, 157);    
+}
+
 .buttons-container {
     width: 30%;
     margin: 0 20px 0 0;
@@ -58,13 +62,15 @@ button {
     align-items: center;
     padding: 10px 15px;
     background-color: rgb(38, 184, 157);    
-    margin: 10px;
+    margin: 3px;
     color: white;
     font-weight: bold;
     text-align: center;
     z-index: 10;
-
 }
+
+
+
 .explainer {
     color: black;
     opacity: .3;
