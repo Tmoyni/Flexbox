@@ -101,7 +101,7 @@ button {
     width: auto;
     text-align: center;
     display: inline-block;
-    transform: rotate(-90deg) translate(-50%, -20px);    
+    transform: rotate(-90deg) translate(-50%, -100%);    
     position: absolute;
     top: 50%;
 }
@@ -126,3 +126,30 @@ button {
     z-index: 10;
 }
 
+.eyebrow {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: bold; 
+    text-transform: uppercase;
+}
+
+.headline {
+    color: black;
+    font-family: WunderBrickDisplay,Times New Roman,Times,serif;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.subhead {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: regular; 
+}
+
+.disclaimer {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+}
