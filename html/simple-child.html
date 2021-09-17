@@ -16,14 +16,19 @@
             <div class="section" id="order"> 
                 <p class="section-header">order:</p>
                 <p class="section-description">TK</p>
+                <button>0</button>
                 <button>1</button>
                 <button>2</button>
                 <button>3</button>
                 <button>4</button>
+                <button>5</button>
+                <button>6</button>
+
             </div>
             <div class="section" id="flex-grow">
                 <p class="section-header">flex-grow:</p>
                 <p class="section-description">TK</p>
+                <button>0</button>
                 <button>1</button>
                 <button>2</button>
                 <button>3</button>
@@ -32,6 +37,7 @@
             <div class="section" id="flex-shrink">
                 <p class="section-header">flex-shrink:</p>
                 <p class="section-description">TK</p>
+                <button>0</button>
                 <button>1</button>
                 <button>2</button>
                 <button>3</button>
@@ -52,23 +58,25 @@
             <div class="view-container">
                 <div class="top-axis axis-text">Main Axis</div>
                 <div class="side-axis axis-text">Cross Axis</div>
-                <div class="view-container-items">
-                    <div class="item">1</div>
-                    <div class="item">2</div>
-                    <div class="item">3</div>
-                    <div class="item">4</div>
-                    <div class="item">5</div>
+                <div class="view-container-items view-container-child">
+                    <div class="item" style="order: 1; flex-grow:1;">A  <span class="section-description">flex-grow: 1</span></div>
+                    <div class="item" style="order: 2;">B</div>
+                    <div class="item child" style="order: 3;">C</div>
+                    <div class="item" style="order: 4;">D</div>
+                    <div class="item" style="order: 5;">E</div>
                 </div>
             </div>
             <div class="css-container">
-                <p class="section-header">css</p>
+                <p class="section-header">parent css</p>
+                <p class="parent-css-text">display: flex; justify-content: center; align-items: center;</p>
+                <p class="section-header">child css</p>
                 <p class="css-text"></p>
             </div>
         </div>
     </div>
     
     
-    <script src="../index.js" type="text/javascript"></script>
+    <script src="../child.js" type="text/javascript"></script>
 </body>
 </html>
 
