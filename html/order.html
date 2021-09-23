@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="content">
+        <div class="buttons-container">
+            <div class="section" id="order"> 
+                <p class="section-header">order:</p>
+                <p class="section-description">TK</p>
+                <button>0</button>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+            </div>
+        </div>
+        <div class="view-css">
+            <div class="view-container">
+                <div class="top-axis axis-text">Main Axis</div>
+                <div class="side-axis axis-text">Cross Axis</div>
+                <div class="view-container-items view-container-child">
+                    <div class="item" style="order: 1; flex-grow:1;">A  <span class="section-description">flex-grow: 1</span></div>
+                    <div class="item" style="order: 2;">B</div>
+                    <div class="item child" style="order: 3;">C</div>
+                    <div class="item" style="order: 4;">D</div>
+                    <div class="item" style="order: 5;">E</div>
+                </div>
+            </div>
+            <div class="css-container">
+                <p class="section-header">parent css</p>
+                <p class="parent-css-text">display: flex; justify-content: center; align-items: center;</p>
+                <p class="section-header">child css</p>
+                <p class="css-text"></p>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="../child.js" type="text/javascript"></script>
+</body>
+</html>
+
