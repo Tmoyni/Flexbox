@@ -9,15 +9,23 @@ body {
     background-color: #191919;
 }
 
-.title {
-    width: 100vw;
-    height: 50px;
-    text-align: center;
+h1 { 
     font-size: 50px;
     font-family: WunderBrickDisplay,Times New Roman,Times,serif;
     font-weight: 400;
     color: #25b89d;
-    padding: 0 0 20px;    
+}
+
+a {
+    color: white;
+    font-size: .8em;
+}
+
+ul {
+    list-style-type: none;
+    margin-block-start: 0;
+    padding-inline-start: 20px;
+
 }
 
 .content {
