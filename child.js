@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    $(":button.order-btn").on( "click", function() {
+    $(":button").on( "click", function() {
         $(thisButton).parent().children("button").removeClass("selected")
         $(thisButton).addClass("selected")
 
