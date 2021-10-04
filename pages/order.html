@@ -15,14 +15,14 @@
         <div class="buttons-container">
             <div class="section" id="order"> 
                 <p class="section-header">order:</p>
-                <p class="section-description">TK</p>
-                <button>0</button>
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
+                <p class="section-description">By default, flex items are laid out in the source order. However, the order property controls the order in which they appear in the flex container.</p>
+                <button class="order-btn">0</button>
+                <button class="order-btn">1</button>
+                <button class="order-btn">2</button>
+                <button class="order-btn">3</button>
+                <button class="order-btn">4</button>
+                <button class="order-btn">5</button>
+                <button class="order-btn">6</button>
             </div>
         </div>
         <div class="view-css">
@@ -30,11 +30,26 @@
                 <div class="top-axis axis-text">Main Axis</div>
                 <div class="side-axis axis-text">Cross Axis</div>
                 <div class="view-container-items view-container-child">
-                    <div class="item" style="order: 1; flex-grow:1;">A  <span class="section-description">flex-grow: 1</span></div>
-                    <div class="item" style="order: 2;">B</div>
-                    <div class="item child" style="order: 3;">C</div>
-                    <div class="item" style="order: 4;">D</div>
-                    <div class="item" style="order: 5;">E</div>
+                    <div class="item" style="order: 1">
+                        <div>A</div>
+                        <div class="order-number section-description">order: 1</div>
+                    </div>
+                    <div class="item" style="order: 2;">
+                        <div>B</div>
+                        <div class="order-number section-description">order: 2</div>
+                    </div>
+                    <div class="item child" style="order: 3;">
+                        <div>C</div>
+                        <div class="target-child order-number section-description">order: 3</div>
+                    </div>
+                    <div class="item" style="order: 4;">
+                        <div>D</div>
+                        <div class="order-number section-description">order: 4</div>
+                    </div>
+                    <div class="item" style="order: 5;">
+                        <div>E</div>
+                        <div class="order-number section-description">order: 5</div>
+                    </div>
                 </div>
             </div>
             <div class="css-container">

@@ -16,11 +16,11 @@
             <div class="section" id="flex-grow">
                 <p class="section-header">flex-grow:</p>
                 <p class="section-description">TK</p>
-                <button>0</button>
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>4</button>
+                <button class="flex-grow-btn">0</button>
+                <button class="flex-grow-btn">1</button>
+                <button class="flex-grow-btn">2</button>
+                <button class="flex-grow-btn">3</button>
+                <button class="flex-grow-btn">4</button>
             </div>
         </div>
         <div class="view-css">
@@ -28,10 +28,22 @@
                 <div class="top-axis axis-text">Main Axis</div>
                 <div class="side-axis axis-text">Cross Axis</div>
                 <div class="view-container-items view-container-child">
-                    <div class="item" style="flex-grow:1;">A  <span class="section-description">flex-grow: 1</span></div>
-                    <div class="item" >B</div>
-                    <div class="item child" >C</div>
-                    <div class="item">D</div>
+                    <div class="item" style="flex-grow: 1;">
+                        <div>A</div>
+                        <div class="flex-grow-num section-description">flex-grow: 1</div>
+                    </div>
+                    <div class="item" style="flex-grow: 0;">
+                        <div>B</div>
+                        <div class="flex-grow-num section-description">flex-grow: 0</div>
+                    </div>
+                    <div class="item child" style="flex-grow: 0;">
+                        <div>C</div>
+                        <div class="target-child flex-grow-num section-description">flex-grow: 0</div>
+                    </div>
+                    <div class="item" style="flex-grow: 0;">
+                        <div>D</div>
+                        <div class="flex-grow-num section-description">flex-grow: 0</div>
+                    </div>
                 </div>
             </div>
             <div class="css-container">
