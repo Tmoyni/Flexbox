@@ -1,12 +1,12 @@
 $(document).ready(function() {
 
     $(":button").on( "click", function() {
-        $(thisButton).parent().children("button").removeClass("selected")
-        $(thisButton).addClass("selected")
+        $(this).parent().children("button").removeClass("selected")
+        $(this).addClass("selected")
 
         //identify property & value and update CSS
-        let property = $(thisButton).parent()[0].id;
-        let value = $(thisButton)[0].outerText;
+        let property = $(this).parent()[0].id;
+        let value = $(this)[0].outerText;
         $(".child").css(property, value)
 
         //add style text to "CSS" section
